@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" href="logo.png">
     <title>An Yong Shyan - Aspiring Software & Front-End Dev</title>
   </head>
 
   <body>
-
+  <div class = "js-scroll">
   <!-- Navbar -->
   <div class = "wrapper">
-    <div class="navbar">
+    <div class="navbar" id = "home">
       <div class="container">
         <div class="box1">
           <ul class="nav-menu">
@@ -33,19 +33,182 @@
       </div>
     </div>
       
+    <!-- Parallax -->
     <div class = "parallax">
       <img src = "background.png" class = "background">
       <div class = "foreground">
         <h1>HI THERE, I'M <br><span class="staggered">AN YONG SHYAN</span></h1>
         <p>An aspiring software developer & front-end developer building impactful software & crafting elegant interfaces</p>
+        <div class = "take-your-time">
+          <img src = "take-your-time.gif" class = "time">
+          <img src = "take-your-time.png" class = "time">
+        </div>
       </div>
     </div>
 
     <section>
-      Lorem ipsumdsadsasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss dolor sit amet consectetur adipisicing elit. Neque accusantium laborum quod ipsum maxime quidem reiciendis possimus amet nostrum ullam officiis recusandae consectetur accusamus, nihil sed expedita, et illum nulla?
-    </section>
-  </div>
+      <!-- About/Hero section-->
+      <div class="hero">
+        <img src="lfab6a2nsmw91.webp" loading="lazy" class="hero-img">
+        <div class="hero-container" id="about">
+          <h2><span><b>About Me</b></span></h2>
+          <p>
+            <span>
+              As a second-year Information Technology student at Ngee Ann Polytechnic, I've nurtured a keen interest in software development 
+              and front-end development since my primary school days. Eager to learn and grow, I'm constantly seeking opportunities to hone my skills 
+              and contribute to impactful projects. I'm currently available for a full-time position starting March 2024, excited to leverage my passion 
+              and knowledge in the exciting tech industry.
+            </span>
+          </p>
+        </div>
+      </div>  
 
+      <!-- Services section-->
+      <div class = "services">
+        <div class = "services-left">
+          <h2><b>Services</b></h2>
+          <p>I will deliver an experience unlike any other that serves your business goals and keep it ahead of the competition.</p>
+        </div>
+        <div class="services-right" id="services">
+          <div class="services-box">
+            <h3>Software Development</h3>
+            <p>Building impactful software tailored to your needs and wants that solves problems quickly and elegantly.</p>
+          </div>
+          <div class="services-box">
+            <h3>Front-End Development</h3>
+            <p>Crafting elegant interfaces that provide seamless user experiences tailored to your brand with a focus on accessbility and engagement.</p>
+          </div>
+          <div class="services-box">
+            <h3>Web Design</h3>
+            <p>Creating and tailoring your needs and wants to an engaging and eye-candy experience by enhancing your brand and business goals while using suitable clean and modern typography.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Works section-->
+      <div class="works" id="works">
+        <h2><b>Recent Works.</b></h2>
+        <div class="works-container">
+          <div class="works-1">
+            <div class="works-box1">
+              <img src="band.png" loading="lazy" class="works-img">
+            </div>
+            <h3>Fictional Band Website</h3>
+          </div> 
+          <div class="works-2">
+            <div class="works-box2">
+              <img src="ictreats.png" loading="lazy" class="works-img">
+            </div>
+            <h3>I.C.Treats</h3>
+          </div>
+          <div class="works-3">
+            <div class="works-box3">
+              <img src="programming.png" loading="lazy" class="works-img">
+            </div>
+            <h3>Programming Projects</h3>
+          </div>
+          <div class="works-4">
+            <div class="works-box4">
+              <img src="devblog.png" loading="lazy" class="works-img">
+            </div>
+            <h3>Front-End Weekly Dev Blog</h3>
+          </div>
+        </div>
+        <div class = "works-center">
+          <div class="works-box5">
+            <img src="price.io.png" loading="lazy" class="works-img1">
+            <h3>Price.io</h3>
+            <p>Gamified global inflation tracker aided with the use of an API</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Contact section-->
+    <h2 class = "contact-h2"><u>Get in touch.</u></h2>
+    <div class = "contact-section">
+      <div class = "info">
+        <div class="info-left" id="contact">
+          <div class="info-box">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/yong-shyan-an-76ab8a272/">Find more information about me here such as certifications, job experiences and education!</a></p>
+          </div>
+          <div class="info-box">
+            <h3>Github</h3>
+            <p><a href="https://github.com/Koyonari">Check out more of my projects here!</a></p>
+          </div>
+          <div class="info-box">
+            <h3>Monkeytype</h3>
+            <p><a href="https://monkeytype.com/profile/NovaEclipse">Learn more about my hobby and typing speeds here!</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "info-right">
+        <div class="contact">
+          <div class="contact-form-container">
+            <div class="contact-form">
+              <form action="https://formspree.io/f/xjvlzbae" method="POST">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="sender-name"
+                    placeholder="Enter Your Name"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="sender-email"
+                    placeholder="Enter Your Email"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    cols="60"
+                    rows="10"
+                    placeholder="Enter Your Message"
+                    name="message"
+                    class="input-field"
+                    required
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="Submit"
+                  id="submit-btn"
+                  class="submit-btn"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Scroll to top button -->
+  <i class="scroll-up">
+    <a href = "#home">
+    <img
+      src="scrollup-arrow.png"
+      class="socicon up-arrow"
+      alt="scroll-up"/>
+    </a>
+  </i>
+
+  <!-- Import javascript -->
+  <script src="momentum.js"></script>
   <script src="script.js"></script>
 
   </body>
